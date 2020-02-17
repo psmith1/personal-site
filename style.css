@@ -1,0 +1,261 @@
+﻿html, body {
+	height: 100%;
+	width: 100%;
+}
+
+/* .navbar {
+	background-color: #23415c;
+	padding: 1% 0;
+	font-size: 1.2em;
+
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.navbar-brand {
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #D5D5D5;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active {
+	color: #FFF;
+} */
+
+#herotext {
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.herolink {
+	position: relative;
+  	z-index: 1;
+}
+
+.herolink::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: #fc3171bf;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.herolink:hover::before {
+  transform: scaleX(1);
+  transform-origin: center left;
+}
+
+
+#home {
+	/* background: url(img/mountains.jpeg) no-repeat center center fixed; */
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	color: white;
+	font-family: "Comfortaa", sans-serif;
+
+	background: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+	/* background-size: 400% 400%;
+	animation: gradient 15s ease infinite; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	opacity: 80%;
+}
+
+.landing-text h1 {
+	font-size: 500%;
+	font-weight: 700;
+}
+
+.padding {
+	padding: 80px 0;
+}
+
+.padding img {
+	width: 100%;
+}
+
+/* #fixed {
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+
+	background: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+} */
+
+h4 {
+	font-size: 24pt;
+	margin-top: 30px;
+}
+
+#bio, #projects {
+	background-image: url("img/repeated-square.png");
+	padding: 40px;
+}
+
+#bioimg {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;;
+}
+
+.imagewrapper {
+	text-align: center;
+}
+
+.img-responsive {
+	box-shadow: 10px 10px 5px grey;
+	border: 1px solid #8a4419;
+  	border-style: inset;
+	margin-bottom: 15px;
+}
+
+.subcontainer {
+	margin-bottom: 20px;
+	color: #4d4d4d;
+}
+
+footer {
+	width: 100%;
+	padding: 5% 5% 10% 5%;
+	color: #FFF;
+	background: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #FFF;
+}
+
+.fa:hover {
+	color: #fc3171bf;
+	text-decoration: none;
+}
+
+.icon {
+	max-width: 200px;
+
+}
+
+@media (max-width: 768px) {
+.landing-text h1 {
+	font-size: 300%;
+}
+.fa {
+	font-size: 20px;
+	padding: 10px;
+}
+.icon {
+	padding-top: 5%;
+	max-width: 100px;
+	width: 50%;
+}
+}
+
+
+
+
+/*--- iOS Landing Page Fix
+section {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 100%;
+ 	display: table;
+}
+.home-wrap {
+ 	clip: rect(0, auto, auto, 0);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+}
+#home {
+	background-image: url('img/mountains.jpeg');
+ 	position: fixed;
+ 	display: table;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+	z-index: -1;
+}
+.landing-text {
+	z-index: 100;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+--*/
+
+/*--- iOS Fixed Image Fix
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
+}
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#fixed {
+	background-image: url('img/background.jpg');
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+}
+--*/
+
