@@ -139,7 +139,7 @@ h4 {
 }
 
 .img-responsive {
-	box-shadow: 10px 10px 5px grey;
+	/* box-shadow: 10px 10px 5px grey; */
 	border: 1px solid #8a4419;
   	border-style: inset;
 	margin-bottom: 15px;
