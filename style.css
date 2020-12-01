@@ -68,7 +68,7 @@
 	color: white;
 	font-family: "Comfortaa", sans-serif;
 
-	background: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+	background: linear-gradient( 109.6deg,  rgba(20, 162, 177,0.7) 11.2%, rgba(11,132,145,1) 91.1% );
 	/* background-size: 400% 400%;
 	animation: gradient 15s ease infinite; */
 }
@@ -173,7 +173,7 @@ footer {
 	width: 100%;
 	padding: 5% 5% 10% 5%;
 	color: #FFF;
-	background: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+	background: linear-gradient( 109.6deg,  rgba(20, 162, 177,0.7) 11.2%, rgba(11,132,145,1) 91.1% );
 }
 
 .fa {
